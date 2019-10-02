@@ -1,0 +1,47 @@
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server-->browser: server sends .html code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: server sends .css code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server-->browser: server send spa.js code
+
+note over browser:
+Browser executes spa.js that
+fetch JSON data from server.
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: server sends JSON data
+
+note over browser:
+Browser executes the event handler
+that renders notes to display
+end note
+
+
+note over browser:
+A new note is written by the user
+and the save button is pressed.
+end note
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+An event handler calls a method 
+that prevents the redirect.
+end note
+
+note over server:
+A new note is added into 'notes' array.
+This new note is an object that contains
+the input and the current datetime.
+end note
+
+note over server:
+All the notes, including then new one, are 
+rewritten by server and displayed in browser.
+end note
+
+server-->browser: {"message":"note created"}
+
