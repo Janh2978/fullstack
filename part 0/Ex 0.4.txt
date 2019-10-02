@@ -1,0 +1,36 @@
+note over browser:
+A new note is written by the user
+and the save button is pressed.
+end note
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+
+note over server:
+A new note is added into 'notes' array.
+This new note is an object that contains
+the input and the current datetime.
+end note
+
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->browser: server sends .html code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: server sends .css code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: server send main.js code
+
+note over browser:
+Browser executes main.js that
+fetch JSON data from server.
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: server sends JSON data
+
+note over browser:
+Browser executes the event handler
+that renders notes to display
+end note
+
+
