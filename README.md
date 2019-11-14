@@ -1,6 +1,7 @@
-# fullstack
+# fullstack Course
 fullstack course excercises
 
+### Parts Completed
 - [x]Part0 
 - [x]Part1 
 - [ ]Part2 
