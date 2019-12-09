@@ -6,7 +6,7 @@ fullstack course excercises
 - [x] Part1 
 - [x] Part2 
 - [x] Part3 
-- [ ] Part4 
+- [x] Part4 
 - [ ] Part5 
 - [ ] Part6 
 - [ ] Part7 
