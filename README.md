@@ -8,6 +8,6 @@ fullstack course excercises
 - [x] Part3 
 - [x] Part4 
 - [x] Part5 
-- [ ] Part6 
+- [x] Part6 
 - [ ] Part7 
 - [ ] Part8
