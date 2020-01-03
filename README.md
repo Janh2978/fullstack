@@ -9,5 +9,5 @@ fullstack course excercises
 - [x] Part4 
 - [x] Part5 
 - [x] Part6 
-- [ ] Part7 
+- [x] Part7 
 - [ ] Part8
