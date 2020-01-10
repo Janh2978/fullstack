@@ -10,4 +10,4 @@ fullstack course excercises
 - [x] Part5 
 - [x] Part6 
 - [x] Part7 
-- [ ] Part8
+- [x] Part8
